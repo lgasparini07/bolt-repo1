@@ -22,6 +22,10 @@ export default {
           glow: 'rgba(6, 182, 212, 0.5)',
         },
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Space Grotesk', 'sans-serif'],
+      },
       animation: {
         'fadeIn': 'fadeIn 0.8s ease-out forwards',
         'slideUp': 'slideUp 0.8s ease-out forwards',
@@ -38,8 +42,8 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         float: {
-            '0%, 100%': { transform: 'translateY(0)' },
-            '50%': { transform: 'translateY(-10px)' },
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
         }
       },
       backgroundImage: {
