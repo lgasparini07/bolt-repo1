@@ -2,7 +2,7 @@ import AnimatedSection from './AnimatedSection';
 
 export default function ProcessTimeline() {
     return (
-        <section className="py-32 px-6">
+        <section className="py-32 px-6 bg-gradient-to-b from-white/2.5 via-white/0 to-white/2.5">
             <div className="max-w-5xl mx-auto">
                 <AnimatedSection>
                     <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">

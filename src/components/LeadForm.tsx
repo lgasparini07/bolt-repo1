@@ -75,6 +75,7 @@ export default function LeadForm() {
   }
 
   return (
+<<<<<<< HEAD
     <div className="glass rounded-2xl p-8 md:p-12 max-w-3xl mx-auto relative overflow-hidden">
       {/* Progress Bar */}
       <div className="absolute top-0 left-0 h-1 bg-gray-800 w-full">
@@ -125,6 +126,109 @@ export default function LeadForm() {
               Continue <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
+=======
+    <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-6">
+        <div>
+          <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+            Full Name <span className="text-blue-400">*</span>
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            value={formData.name}
+            onChange={handleChange}
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-200"
+            placeholder="John Smith"
+          />
+        </div>
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+            Email Address <span className="text-blue-400">*</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-200"
+            placeholder="john@company.com"
+          />
+        </div>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <div>
+          <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
+            Company Name
+          </label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            value={formData.company}
+            onChange={handleChange}
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-200"
+            placeholder="Acme Corp"
+          />
+        </div>
+        <div>
+          <label htmlFor="website" className="block text-sm font-medium text-gray-300 mb-2">
+            Website <span className="text-gray-500">(optional)</span>
+          </label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            value={formData.website}
+            onChange={handleChange}
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-200"
+            placeholder="https://yourcompany.com"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+          Tell us about your operations <span className="text-gray-500">(optional)</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows={4}
+          value={formData.message}
+          onChange={handleChange}
+          className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-200 resize-none"
+          placeholder="What manual processes are consuming your team's time?"
+        />
+      </div>
+
+      {status === 'error' && (
+        <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4 text-red-400 text-sm animate-fadeIn">
+          {errorMessage || 'Failed to submit. Please try again.'}
+        </div>
+      )}
+
+      <button
+        type="submit"
+        disabled={status === 'loading'}
+        className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:cursor-not-allowed text-white font-medium py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-3 group shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 disabled:shadow-none"
+      >
+        {status === 'loading' ? (
+          <>
+            <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+            Submitting...
+          </>
+        ) : (
+          <>
+            Request Your Audit
+            <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </>
+>>>>>>> 5793500af7176106d57705edd4447caa42427321
         )}
 
         {step === 2 && (
