@@ -3,7 +3,7 @@ import AnimatedSection from './AnimatedSection';
 
 export default function Qualification() {
     return (
-        <section className="py-32 px-6 bg-dark">
+        <section className="py-32 px-6 bg-gradient-to-b from-white/2.5 via-white/0 to-white/2.5">
             <div className="max-w-6xl mx-auto">
                 <AnimatedSection>
                     <h2 className="text-4xl md:text-5xl font-bold text-center mb-20 text-white">

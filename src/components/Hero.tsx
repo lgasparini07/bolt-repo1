@@ -3,7 +3,7 @@ import AnimatedSection from './AnimatedSection';
 
 export default function Hero() {
     return (
-        <section className="min-h-screen flex items-center justify-center px-6 py-20 relative z-10">
+        <section className="min-h-screen flex items-center justify-center px-6 py-20 relative z-10 bg-gradient-to-b from-transparent via-white/5 to-transparent">
             <div className="max-w-5xl mx-auto text-center">
                 <AnimatedSection>
                     <div className="inline-block mb-6 px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-sm font-medium">
