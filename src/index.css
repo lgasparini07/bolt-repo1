@@ -4,7 +4,21 @@
 
 @layer base {
   body {
-    @apply bg-dark text-white antialiased;
+    @apply bg-dark text-white antialiased selection:bg-blue-500/30 selection:text-white;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-dark-card backdrop-blur-lg border border-white/10;
+  }
+  
+  .glass-hover {
+    @apply hover:bg-white/5 transition-colors duration-300;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
   }
 }
 

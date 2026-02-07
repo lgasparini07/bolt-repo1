@@ -12,7 +12,7 @@ export default function ProcessTimeline() {
 
                 <AnimatedSection delay={100}>
                     <div className="space-y-6 max-w-3xl mx-auto">
-                        <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 flex items-start gap-4">
+                        <div className="glass p-6 rounded-xl flex items-start gap-4 group hover:bg-white/5 transition-colors duration-300">
                             <div className="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                 <span className="text-blue-500 font-bold">1</span>
                             </div>
@@ -24,7 +24,7 @@ export default function ProcessTimeline() {
                             </div>
                         </div>
 
-                        <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 flex items-start gap-4">
+                        <div className="glass p-6 rounded-xl flex items-start gap-4 group hover:bg-white/5 transition-colors duration-300">
                             <div className="w-8 h-8 bg-cyan-600/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                 <span className="text-cyan-500 font-bold">2</span>
                             </div>
@@ -36,7 +36,7 @@ export default function ProcessTimeline() {
                             </div>
                         </div>
 
-                        <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 flex items-start gap-4">
+                        <div className="glass p-6 rounded-xl flex items-start gap-4 group hover:bg-white/5 transition-colors duration-300">
                             <div className="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                 <span className="text-blue-500 font-bold">3</span>
                             </div>
@@ -48,7 +48,7 @@ export default function ProcessTimeline() {
                             </div>
                         </div>
 
-                        <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 flex items-start gap-4">
+                        <div className="glass p-6 rounded-xl flex items-start gap-4 group hover:bg-white/5 transition-colors duration-300">
                             <div className="w-8 h-8 bg-cyan-600/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                 <span className="text-cyan-500 font-bold">4</span>
                             </div>

@@ -48,7 +48,7 @@ export default function LeadForm() {
 
   if (status === 'success') {
     return (
-      <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg p-8 text-center animate-fadeIn">
+      <div className="glass rounded-lg p-8 text-center animate-fadeIn">
         <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
           <Send className="w-8 h-8 text-green-500" />
         </div>
@@ -74,7 +74,7 @@ export default function LeadForm() {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
             placeholder="John Smith"
           />
         </div>
@@ -89,7 +89,7 @@ export default function LeadForm() {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
             placeholder="john@company.com"
           />
         </div>
@@ -106,7 +106,7 @@ export default function LeadForm() {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
             placeholder="Acme Corp"
           />
         </div>
@@ -120,7 +120,7 @@ export default function LeadForm() {
             name="website"
             value={formData.website}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
             placeholder="https://yourcompany.com"
           />
         </div>
@@ -136,7 +136,7 @@ export default function LeadForm() {
           rows={4}
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors resize-none"
+          className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors resize-none"
           placeholder="What manual processes are consuming your team's time?"
         />
       </div>
@@ -150,7 +150,7 @@ export default function LeadForm() {
       <button
         type="submit"
         disabled={status === 'loading'}
-        className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:cursor-not-allowed text-white font-medium py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-3 group"
+        className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:cursor-not-allowed text-white font-medium py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-3 group shadow-lg shadow-blue-900/20"
       >
         {status === 'loading' ? (
           <>

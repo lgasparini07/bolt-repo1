@@ -16,9 +16,9 @@ export default function HowItWorks() {
 
                 <div className="grid md:grid-cols-4 gap-8">
                     <AnimatedSection delay={100}>
-                        <div className="relative">
-                            <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 h-full">
-                                <div className="w-16 h-16 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6">
+                        <div className="relative group">
+                            <div className="glass p-8 h-full rounded-2xl transition-all duration-300 group-hover:bg-white/5">
+                                <div className="w-16 h-16 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                     <MessageSquare className="w-8 h-8 text-blue-500" />
                                 </div>
                                 <div className="text-5xl font-bold text-blue-600/20 mb-4">01</div>
@@ -27,14 +27,14 @@ export default function HowItWorks() {
                                     We map your current workflows and identify bottlenecks consuming your team's time.
                                 </p>
                             </div>
-                            <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-blue-600 to-transparent" />
+                            <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-blue-600/50 to-transparent" />
                         </div>
                     </AnimatedSection>
 
                     <AnimatedSection delay={200}>
-                        <div className="relative">
-                            <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 h-full">
-                                <div className="w-16 h-16 bg-cyan-600/10 rounded-xl flex items-center justify-center mb-6">
+                        <div className="relative group">
+                            <div className="glass p-8 h-full rounded-2xl transition-all duration-300 group-hover:bg-white/5">
+                                <div className="w-16 h-16 bg-cyan-600/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                     <Lightbulb className="w-8 h-8 text-cyan-500" />
                                 </div>
                                 <div className="text-5xl font-bold text-cyan-600/20 mb-4">02</div>
@@ -43,14 +43,14 @@ export default function HowItWorks() {
                                     We pinpoint high-impact automation opportunities that deliver measurable efficiency gains.
                                 </p>
                             </div>
-                            <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-cyan-600 to-transparent" />
+                            <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-cyan-600/50 to-transparent" />
                         </div>
                     </AnimatedSection>
 
                     <AnimatedSection delay={300}>
-                        <div className="relative">
-                            <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 h-full">
-                                <div className="w-16 h-16 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6">
+                        <div className="relative group">
+                            <div className="glass p-8 h-full rounded-2xl transition-all duration-300 group-hover:bg-white/5">
+                                <div className="w-16 h-16 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                     <Cpu className="w-8 h-8 text-blue-500" />
                                 </div>
                                 <div className="text-5xl font-bold text-blue-600/20 mb-4">03</div>
@@ -59,13 +59,13 @@ export default function HowItWorks() {
                                     We architect tailored automation systems that integrate seamlessly with your operations.
                                 </p>
                             </div>
-                            <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-blue-600 to-transparent" />
+                            <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-blue-600/50 to-transparent" />
                         </div>
                     </AnimatedSection>
 
                     <AnimatedSection delay={400}>
-                        <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 h-full">
-                            <div className="w-16 h-16 bg-cyan-600/10 rounded-xl flex items-center justify-center mb-6">
+                        <div className="glass p-8 h-full rounded-2xl transition-all duration-300 group-hover:bg-white/5 group">
+                            <div className="w-16 h-16 bg-cyan-600/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <UserCheck className="w-8 h-8 text-cyan-500" />
                             </div>
                             <div className="text-5xl font-bold text-cyan-600/20 mb-4">04</div>

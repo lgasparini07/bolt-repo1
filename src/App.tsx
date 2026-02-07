@@ -11,7 +11,7 @@ import AnimatedSection from './components/AnimatedSection';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white relative">
+    <div className="min-h-screen bg-dark text-white relative">
       <BackgroundEffects />
 
       <div className="relative z-10">

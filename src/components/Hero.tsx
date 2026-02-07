@@ -15,7 +15,7 @@ export default function Hero() {
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                         Your Team Is Drowning in
                         <br />
-                        <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent text-glow">
                             Manual Work
                         </span>
                     </h1>
@@ -32,7 +32,7 @@ export default function Hero() {
                 <AnimatedSection delay={300}>
                     <a
                         href="#audit"
-                        className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-medium text-lg px-8 py-4 rounded-lg transition-all duration-300 group shadow-lg shadow-blue-900/20"
+                        className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-500 text-white font-medium text-lg px-8 py-4 rounded-lg transition-all duration-300 group shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40"
                     >
                         Request an Automation Audit
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
