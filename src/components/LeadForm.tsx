@@ -65,7 +65,7 @@ export default function LeadForm() {
       <div className="grid md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-            Full Name *
+            Full Name <span className="text-blue-400">*</span>
           </label>
           <input
             type="text"
@@ -74,13 +74,13 @@ export default function LeadForm() {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-200"
             placeholder="John Smith"
           />
         </div>
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-            Email Address *
+            Email Address <span className="text-blue-400">*</span>
           </label>
           <input
             type="email"
@@ -89,7 +89,7 @@ export default function LeadForm() {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-200"
             placeholder="john@company.com"
           />
         </div>
@@ -106,13 +106,13 @@ export default function LeadForm() {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-200"
             placeholder="Acme Corp"
           />
         </div>
         <div>
           <label htmlFor="website" className="block text-sm font-medium text-gray-300 mb-2">
-            Website (optional)
+            Website <span className="text-gray-500">(optional)</span>
           </label>
           <input
             type="url"
@@ -120,7 +120,7 @@ export default function LeadForm() {
             name="website"
             value={formData.website}
             onChange={handleChange}
-            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
+            className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-200"
             placeholder="https://yourcompany.com"
           />
         </div>
@@ -128,7 +128,7 @@ export default function LeadForm() {
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-          Tell us about your operations (optional)
+          Tell us about your operations <span className="text-gray-500">(optional)</span>
         </label>
         <textarea
           id="message"
@@ -136,13 +136,13 @@ export default function LeadForm() {
           rows={4}
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors resize-none"
+          className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-200 resize-none"
           placeholder="What manual processes are consuming your team's time?"
         />
       </div>
 
       {status === 'error' && (
-        <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4 text-red-400 text-sm">
+        <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4 text-red-400 text-sm animate-fadeIn">
           {errorMessage || 'Failed to submit. Please try again.'}
         </div>
       )}
@@ -150,7 +150,7 @@ export default function LeadForm() {
       <button
         type="submit"
         disabled={status === 'loading'}
-        className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:cursor-not-allowed text-white font-medium py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-3 group shadow-lg shadow-blue-900/20"
+        className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:cursor-not-allowed text-white font-medium py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-3 group shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 disabled:shadow-none"
       >
         {status === 'loading' ? (
           <>
