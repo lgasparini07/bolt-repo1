@@ -5,9 +5,9 @@ export default {
     extend: {
       colors: {
         dark: {
-          DEFAULT: '#0a0a0a',
-          lighter: '#1a1a1a',
-          card: 'rgba(26, 26, 26, 0.6)',
+          DEFAULT: '#030303', // Deepened from #0a0a0a
+          lighter: '#121212', // Deepened from #1a1a1a
+          card: 'rgba(20, 20, 20, 0.8)', // Darker and more opaque for better legibility
         },
         blue: {
           400: '#60a5fa',
