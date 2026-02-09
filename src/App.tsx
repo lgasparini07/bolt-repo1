@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import BackgroundEffects from './components/BackgroundEffects';
 import Hero from './components/Hero';
 import Qualification from './components/Qualification';
@@ -63,6 +64,7 @@ function App() {
         <AuthorityIndex />
         <Footer />
       </div>
+      <Analytics />
     </div>
   );
 }
