@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import BackgroundEffects from './components/BackgroundEffects';
 import Hero from './components/Hero';
 import Qualification from './components/Qualification';
@@ -63,6 +64,7 @@ function App() {
         <AuthorityIndex />
         <Footer />
       </div>
+      <SpeedInsights />
     </div>
   );
 }
